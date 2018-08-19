@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var rateText: UILabel!
     @IBOutlet weak var pitchSlider: UISlider!
     @IBOutlet weak var pitchText: UILabel!
-    //語速和語調依照slider滑動顯示不同數字
+    //Slider動作：語速和語調依照slider滑動顯示不同數字
     @IBAction func changeSlider(_ sender: Any) {
         rateText.text = String(format: "%.1f", rateSlider.value)
         pitchText.text = String(format: "%.1f", pitchSlider.value)
